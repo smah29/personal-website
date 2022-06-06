@@ -2,9 +2,9 @@
 
 website link : https://smah29.github.io/personal-website/
 
-The main file is index.html, run the website by running this file. Most of the code is in bootstrap.
+The main file is index.html, run the website by running this file. Most of the code is build with bootstrap.
 
-resource :
+Resources :
 
 1. https://getbootstrap.com/docs/5.2/getting-started/introduction/
 2. https://icons.getbootstrap.com/
@@ -20,3 +20,4 @@ resource :
 12. about-me shadow : https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow4
 13. name rotation : https://www.w3schools.com/css/css3_3dtransforms.asp
 14. image border : https://www.w3schools.com/css/css3_images.asp
+15. https://getbootstrap.com/docs/5.2/components/navbar/#color-schemes
