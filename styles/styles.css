@@ -14,7 +14,7 @@ body {
 .about-me {
   background-color: var(--light-grey);
   font-size: 1.15rem;
-  animation: fadeIn 5s;
+  /* animation: fadeIn 5s;giving color contast error */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about-me:hover {
@@ -33,14 +33,14 @@ body {
   }
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0.1;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 
 @media (max-width: 414px) {
   .graphic-1 {
