@@ -14,10 +14,114 @@ body {
 .about-me {
   background-color: var(--light-grey);
   font-size: 1.15rem;
+  animation: fadeIn 5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-me:hover {
+  animation: animate 5s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-image: radial-gradient(#a67cb6, #f9f9f9);
+  }
+  50% {
+    background-image: radial-gradient(#50a3db, #f9f9f9);
+  }
+  100% {
+    background-image: radial-gradient(#16a085, #f9f9f9);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 414px) {
   .graphic-1 {
     display: none;
+  }
+}
+h1:hover {
+  animation: rotate1 3s ease infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  75% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(359deg);
+  }
+}
+#contact-border {
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 9px;
+}
+.my-image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.my-image:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+svg:hover,
+h2:hover,
+.shake:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+  font-weight: bold;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
