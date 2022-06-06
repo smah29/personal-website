@@ -43,7 +43,6 @@ function handleSubmit(event) {
     let thanks = document.createElement('aside');
     thanks.textContent = 'Thank You For Reaching Out!';
     thanks.id = 'thanks';
-    thanks.className = 'rainbow-text';
     thanks.style.paddingTop = '15px';
     thanks.style.paddingBottom = '0px';
     thanks.style.fontWeight = 'bold';
